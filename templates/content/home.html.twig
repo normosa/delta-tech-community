@@ -1,2 +1,157 @@
 {# templates/content/home.html.twig #}
-<h1>{{ title }}</h1>
+{% extends "base.html.twig" %}
+{% block title %}
+	Welcome to Delta Tech Community
+{% endblock %}
+{% block body %}
+   {{ include('content/inc/header.html.twig') }}
+	<section class="home-intro">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="col-lg-12">
+				<h1>Delta Tech Community</h1>
+				<p>Lorem ipsum dolor sit amet dan consecteur Lorem ipsum dolor 
+					sit amet dan consecteur Lorem ipsum dolor sit amet dan consecteur
+				</p>
+				<a href="">Join Us</a>
+			</div>
+		</div>
+	</section>
+	<section class="commitment">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7">
+					<h2>Our Commitment</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+						Phasellus semper metus at suscipit iaculis. Pellentesque 
+						consequat eros mi, eu imperdiet est convallis quis. Maecenas 
+					</p>
+				</div>
+				<div class="col-lg-5">
+					<a href="#" class="learn-more">Learn more</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="highlights">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="highlight">
+						<img src="{{ asset('assets/images/dtc.png') }}" alt="dtc"/>
+						<h4>DTC</h4>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+						</p>
+						<a href="#" class="learn-more">Learn more</a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="highlight">
+						<img src="{{ asset('assets/images/startups.png') }}" alt="Startups"/>
+						<h4>Startups</h4>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+						</p>
+						<a href="#" class="learn-more">Learn more</a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="highlight">
+						<img src="{{ asset('assets/images/hubs.png') }}" alt="Hubs"/>
+						<h4>Hubs</h4>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+						</p>
+						<a href="#" class="learn-more">Learn more</a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="highlight">
+						<img src="{{ asset('assets/images/job-board.png') }}" alt="Job Board"/>
+						<h4>Job Board</h4>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+						</p>
+						<a href="#" class="learn-more">Learn more</a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="highlight">
+						<img src="{{ asset('assets/images/sub-communities.png') }}" alt="Sub Communities"/>
+						<h4>Sub - Communitites</h4>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+						</p>
+						<a href="#" class="learn-more">Learn more</a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="highlight">
+						<img src="{{ asset('assets/images/resources.png') }}" alt="Resources"/>
+						<h4>Resources</h4>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+						</p>
+						<a href="#" class="learn-more">Learn more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="latest">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Latest Tech News in Delta State</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="news">
+						<h4>Waffihub Releases innovative Fintech App</h4>
+						<img src="{{ asset('assets/images/news.jpg') }}" alt="news"/>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+							Phasellus
+						</p>
+						<div class="footnote">
+							<strong>By Efe Michael</strong>
+							<a href="#">Read</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="news">
+						<h4>Waffihub Releases innovative Fintech App</h4>
+						<img src="{{ asset('assets/images/news.jpg') }}" alt="news"/>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+							Phasellus
+						</p>
+						<div class="footnote">
+							<strong>By Efe Michael</strong>
+							<a href="#">Read</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="news">
+						<h4>Waffihub Releases innovative Fintech App</h4>
+						<img src="{{ asset('assets/images/news.jpg') }}" alt="news"/>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+							Phasellus
+						</p>
+						<div class="footnote">
+							<strong>By Efe Michael</strong>
+							<a href="#">Read</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	{{ include('content/inc/footer.html.twig') }}
+{% endblock %}
