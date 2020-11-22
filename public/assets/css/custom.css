@@ -247,3 +247,7 @@ footer p {
     color: #fff;
     margin-left: 10px;
 }
+
+.active{
+    color: #6FBD4F;
+}

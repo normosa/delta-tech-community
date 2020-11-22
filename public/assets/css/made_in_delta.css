@@ -1,0 +1,68 @@
+.made-in-delta{
+   background: #0595D5;
+   text-align: center;
+   margin-top: 20px;
+   position: relative;
+}
+
+.active2{
+    background-color: #0595D5;
+    color: #FFFFFF !important;
+}
+
+.made-in-delta .col-lg-12{
+    padding-top: 30px;
+}
+
+
+.made-in-delta .container p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.made-in-delta .container h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.active-made-in-delta{
+    background-color: #0595D5;
+    width: 152px;
+    height: 50px;
+    position: absolute;
+    display: block;
+}
+
+.card-container{
+    position: relative;
+}
+
+.card-container .move-card-up{
+    position: absolute;
+    top: -30px;
+}
+
+.latest-width{
+    height: 700px;
+}
+
+@media (max-width: 991px) {
+    .active-made-in-delta{
+    display: none;
+    }
+
+    .latest-width{
+        height: 2100px;
+    }
+}
+
