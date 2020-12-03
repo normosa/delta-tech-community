@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0px;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.my_container{
+    height: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: white;
+    height: 72px;
+    color: white;
+    padding-top: 5px;
+    border-bottom: rgb(79, 183, 224) 3px solid;
+    position: fixed;
+    transition: 0.6s;
+    width: 100%;
+    z-index: 100000;
+}
+
+h5{
+    color: rgb(129, 123, 123);
+    padding: 7px;
+}
+header .containerz{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background-color: white;
+}
+
+header #branding{
+    float: left;
+}
+nav{
+    background-color: white;
+}
+
+header nav li{
+    float: right;
+    display: inline;
+    padding: 0 20px 0 20px;
+    color: rgb(79, 183, 224);
+    background-color: white;
+}
+
+header nav ul a{
+    color: rgb(11, 160, 219);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav li:hover{
+    background-color: rgb(79, 183, 224);
+    transition: 0.6s;
+}
+
+header nav ul a:hover{
+    color: white;
+    font-weight: bold;
+    transition: 0.6s;
+}
+
+ header.sticky {
+ opacity: 0.95;
+}
+
+
+header nav ul li.current a{
+    background:  rgb(79, 183, 224);
+    color: white;
+    font-weight: bold;
+} 
+
+#space{
+    width: 100%;
+    height: 160px;
+    background-color: rgb(79, 183, 224);
+}
+
+
+#ban{
+    display: flex;
+    justify-content: center;
+    height: 440px;
+    width: 100%;
+    background-color: rgb(79, 183, 224);
+   
+}
+
+#banner{
+    height: 400px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    background-image: url('/img/tech2.png');
+    background-repeat: no-repeat; 
+    margin-top: -35px;
+}
+
+#banner h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    padding-left: 50px;
+    color: white;
+}
+
+#banner p{
+    font-family: monospace;
+    font-size: 25px;
+    padding-left: 50px;
+    padding-right: 150px;
+    color: white;
+}
+
+#vision{
+    margin-top: -26px;
+    height: 100%;
+    width: 100%;
+    padding: 20px 0;
+    text-align: left;
+    background-color: white;
+}
+
+#vision h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    padding-left: 50px;
+    color: black;
+}
+
+#vision p{
+    font-family: monospace;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 150px;
+    color: black;
+}
+
+#commit h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    padding-left: 50px;
+    color: darkgray;
+    margin: 0 auto;
+}
+.grid-container {
+    display: inline-grid;
+    grid-gap: 50px 100px;
+    grid-template-columns: auto auto;
+    padding: 20px 75px;
+  }
+
+  .grid-container2 {
+    display: inline-grid;
+    grid-gap: 50px 100px;
+    grid-template-columns: auto auto auto;
+    padding: 0 75px;
+  }
+  .grid-item {
+    font-size: 18px;
+    text-align: center;
+  }
+
+.grid-item h3 {
+  color: teal;
+  font-size: 18px;
+  }
+
+  .grid-item a {
+    text-decoration: none;
+    color: teal;
+}
+
+  #breakdown{
+    margin-top: -26px;
+    height: 100%;
+    width: 100%;
+    padding: 20px 0;
+    text-align: left;
+    background-color: white;
+}
+
+#breakdown h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    padding-left: 50px;
+    color: black;
+}
+
+#breakdown p{
+    font-size: 18px;
+    padding-left: 50px;
+    padding-right: 150px;
+    color: black;
+}
+.color{
+    background: white;
+    padding:  30px 0;
+}
+  
+.break-containerz{
+    max-width: 120%;
+    display: inline-grid;
+    grid-gap: 50px 200px;
+    grid-template-columns: auto auto;
+    padding: 20px 150px;
+}
+
+#bar_chart{
+    height: 400px;
+    width: 100%;
+    background-image: url('/img/stat2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.to-top{
+    background: #ddd;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+    border-radius: 50%;
+    display: flex;
+    border: 1px solid  azure;
+    align-content: center;
+    justify-content: center;
+    font-size: 32px;
+    color:#2894ff;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.to-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 0.8;
+}
+
+.to-top.active:hover{
+    background: white;
+    opacity: 1;
+    border: none;
+}
+.social-media{
+    margin: 0;
+    padding: 0;
+    height: 30px;
+}
+.social-media ul{
+    display: flex;
+    justify-content: center;
+}
+
+.social-media ul li{
+    list-style: none;
+}
+
+.social-media ul li a{
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 60px;
+    height: 60px;
+    display: block;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    background: linear-gradient(0deg, #ddd, #fff);
+    transition: 0.5s;
+}
+
+.social-media ul li a:hover{
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+
+}
+
+.social-media ul li a .fa{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+    line-height: calc(60px - 12px);
+    font-size: 24px;
+    color: #262626;
+    transition: 0.5s;
+}
+
+.social-media ul li:nth-child(1) a:hover .fa{
+    color: #00aced;
+}
+
+.social-media ul li:nth-child(2) a:hover .fa{
+    color: #3b5998;
+}
+
+.social-media ul li:nth-child(3) a:hover .fa{
+    color: #bc2a8d;
+}
+
+.social-media ul li:nth-child(4) a:hover .fa{
+    color: #007bb6;
+}
+
+.social-media ul li:nth-child(5) a:hover .fa{
+    color: #25d366;
+}
+
+footer#index{
+    padding:5px;
+    margin-top: 20px;
+    min-width: 100%;
+    color: white;
+    background-color: rgb(48, 187, 192);
+    text-align: center;
+    font-size: 19px;
+}
+@media only screen and (max-width: 600px){
+
+    .grid-container {
+        display: block;
+        padding: 20px 75px;
+      }
+    
+    .grid-container2 {
+        display: block;
+        padding: 0 75px;
+      }
+      .break-containerz{
+        max-width: 100%;
+        display: block;
+        padding:20px 105px;
+    }
+    
+    .grid-item {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    header ul li.current a{
+        background:  rgb(79, 183, 224);
+        color: white;
+        font-weight: bold;
+    } 
+    #commit h1, #banner h1{
+       margin: 20px 50px;
+    }
+
+    #banner p,  #vision h1, #vision p, #breakdown p, #breakdown h1{
+        padding: 20px 75px;
+    }
+    
+#bar_chart{
+    height: 200px;
+    width: 100%;
+    background-image: url('/img/stat.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+}
