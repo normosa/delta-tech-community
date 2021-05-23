@@ -113,6 +113,19 @@ section.commitment p {
 section.commitment div.col-lg-5 {
     align-self: center;
 }
+section.commitment div.col-lg-5 strong{
+    align-self: center;
+    display: block;
+    color: #3D3D3D;
+    border: 1px solid #0595d5;
+    box-sizing: border-box;
+    border-radius: 5px;
+    max-width: 350px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+}
 a.learn-more {
     display: block;
     color: #0595d5;
@@ -132,13 +145,17 @@ a.learn-more:hover {
 section.highlights {
     padding: 40px 0;
 }
+section.highlights h2 {
+    font-size: 22px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
 section.highlights .highlight {
-    border: 1px solid #0595d5;
     box-sizing: border-box;
     border-radius: 20px;
-    text-align: center;
     max-width: 358px;
     margin: 0 auto 70px auto;
+    text-align: center;
 }
 section.highlights .highlight img {
     width: 339px;
@@ -150,13 +167,28 @@ section.highlights .highlight h4 {
     font-size: 16px;
     font-weight: 700;
 }
-section.highlights .highlight p {
-    max-width: 234px;
-    margin: 0 auto 20px auto;
+section.highlights .highlight a.more {
+    color: #0595d5;
+    text-align: left;
+    font-weight: 500;
 }
-section.highlights .highlight a.learn-more {
-    margin-bottom: -22px;
-    background-color: #fff;
+section.events {
+    max-width: 1400px;
+    margin: 0 auto 30px auto;
+}
+section.events h2 {
+    padding: 10px 20px;
+}
+section.events .slide {
+    min-height: 662px;
+}
+section.events .slide-1 {
+    background: url('../images/slide2.jpg') no-repeat;
+    background-size: cover;
+}
+section.events .slide-2 {
+    background: url('../images/slide1.jpg') center no-repeat;
+    background-size: cover;
 }
 section.latest {
     background-color: #f4f1f1;
@@ -207,6 +239,112 @@ section.latest .news .footnote a {
     padding: 5px 15px;
     text-align: center;
     color: #fff;
+}
+section.about-intro {
+    background: #0595D5;
+    padding: 40px 0;
+    color: #fff;
+}
+section.about-intro h2 {
+    font-size: 24px;
+}
+section.about-commitments {
+    padding-top: 40px;
+}
+section.about-commitments h2 {
+    font-size: 26px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+section.about-commitments .commitment {
+    box-sizing: border-box;
+    border-radius: 20px;
+    max-width: 358px;
+    margin: 10px auto;
+    text-align: center;
+}
+section.about-commitments .commitment img {
+    height: 70px;
+    display: block;
+    margin: 20px auto;
+}
+section.community-breakdown h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+section.community-breakdown .stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+    text-align: center;
+    margin: 20px auto;
+}
+section.community-breakdown .stats strong {
+    color: #6FBD4F;
+    font-size: 28px;
+}
+section.members-benefits {
+    padding: 40px 0;
+    background: #FED253;
+}
+section.members-benefits h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+section.members-benefits h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+section.partner {
+    padding: 60px 0;
+    background: #F4F1F1;
+}
+section.partner .container {
+    max-width: 1200px !important;
+}
+section.partner h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+section.partner .logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+section.partner h4 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    color: #6FBD4F;
+    margin-bottom: 20px;
+}
+section.partner form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 10px auto;
+}
+section.partner form input, section.partner form textarea {
+    border: 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+section.partner form textarea {
+    min-height: 70px;
+}
+section.partner form button {
+    border: 0;
+    background: #6FBD4F;
+    color: #fff;
+    padding: 7px 0;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: 500;
 }
 footer {
     background-color: #817f7f;

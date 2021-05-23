@@ -3,6 +3,9 @@
 {% block title %}
 	Welcome to Delta Tech Community
 {% endblock %}
+{% block stylesheets %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+{% endblock %}
 {% block body %}
    {{ include('content/inc/header.html.twig') }}
 	<section class="home-intro">
@@ -10,10 +13,9 @@
 		<div class="container">
 			<div class="col-lg-12">
 				<h1>Delta Tech Community</h1>
-				<p>Lorem ipsum dolor sit amet dan consecteur Lorem ipsum dolor 
-					sit amet dan consecteur Lorem ipsum dolor sit amet dan consecteur
+				<p>A community of tech ethusiasts working together to build Delta's tech ecosystem
 				</p>
-				<a href="">Join Us</a>
+				<a href="#">Join Us</a>
 			</div>
 		</div>
 	</section>
@@ -23,13 +25,12 @@
 				<div class="col-lg-7">
 					<h2>Our Commitment</h2>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-						Phasellus semper metus at suscipit iaculis. Pellentesque 
-						consequat eros mi, eu imperdiet est convallis quis. Maecenas 
+						We are committed to ensure that every individual or business who desires to 
+						succeed in tech in Delta State, gets an enabling environment to do so.
 					</p>
 				</div>
 				<div class="col-lg-5">
-					<a href="#" class="learn-more">Learn more</a>
+					<strong>We'll make tech work in Delta</strong>
 				</div>
 			</div>
 		</div>
@@ -37,14 +38,20 @@
 	<section class="highlights">
 		<div class="container">
 			<div class="row">
+				<div class="col-md-12">
+					<h2>A fast growing ecosystem</h2>
+				</div>
+			</div>
+			<div class="row">
 				<div class="col-md-4">
 					<div class="highlight">
 						<img src="{{ absolute_url(asset('assets/images/dtc.png')) }}" alt="dtc"/>
 						<h4>DTC</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+							Delta  Tech Community was formed June 23, 2020, one day after 
+							the Delta state  commissioner for Science and...
 						</p>
-						<a href="#" class="learn-more">Learn more</a>
+						<a href="{{ absolute_url('/about') }}" class="more">Learn more</a>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -52,106 +59,92 @@
 						<img src="{{ absolute_url(asset('assets/images/startups.png')) }}" alt="Startups"/>
 						<h4>Startups</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+							Delta Tech is home to a number of world-class startups with 
+							innovative, technology-driven solutions that are...
 						</p>
-						<a href="#" class="learn-more">Learn more</a>
+						<a href="#" class="more">Learn more</a>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="highlight">
 						<img src="{{ absolute_url(asset('assets/images/hubs.png')) }}" alt="Hubs"/>
-						<h4>Hubs</h4>
+						<h4>DeltaHubs</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+							As the number of young people  getting into tech in Delta state 
+							continues ton surge, we are beginning to witness...
 						</p>
-						<a href="#" class="learn-more">Learn more</a>
+						<a href="#" class="more">Learn more</a>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="highlight">
 						<img src="{{ absolute_url(asset('assets/images/job-board.png')) }}" alt="Job Board"/>
-						<h4>Job Board</h4>
+						<h4>#MadeInDelta</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+							Innovators and technologists in Delta are always busy, workng hard to 
+							produce one great product or the other...
 						</p>
-						<a href="#" class="learn-more">Learn more</a>
+						<a href="#" class="more">Learn more</a>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="highlight">
 						<img src="{{ absolute_url(asset('assets/images/sub-communities.png')) }}" alt="Sub Communities"/>
-						<h4>Sub - Communitites</h4>
+						<h4>Job Board</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+							Looking to hire? Delta Tech community abounds with qualified tech 
+							talents that are ready to interview... 
 						</p>
-						<a href="#" class="learn-more">Learn more</a>
+						<a href="#" class="more">Learn more</a>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="highlight">
 						<img src="{{ absolute_url(asset('assets/images/resources.png')) }}" alt="Resources"/>
-						<h4>Resources</h4>
+						<h4>Sub-communities</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+							There are over two dozen active tech/startup communities in Delta state. 
+							these various communities...
 						</p>
-						<a href="#" class="learn-more">Learn more</a>
+						<a href="#" class="more">Learn more</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="latest">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h2>Latest Tech News in Delta State</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="news">
-						<h4>Waffihub Releases innovative Fintech App</h4>
-						<img src="{{ absolute_url(asset('assets/images/news.jpg')) }}" alt="news"/>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-							Phasellus
-						</p>
-						<div class="footnote">
-							<strong>By Efe Michael</strong>
-							<a href="#">Read</a>
-						</div>
+	<section class="events">
+		<h2>Upcoming events</h2>
+				<div class="splide">
+					<div class="splide__track">
+						<ul class="splide__list">
+							<li class="splide__slide">
+								<div class="slide slide-1">
+								</div>
+							</li>
+							<li class="splide__slide">
+								<div class="slide slide-2">
+								</div>
+							</li>
+						</ul>
 					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="news">
-						<h4>Waffihub Releases innovative Fintech App</h4>
-						<img src="{{ absolute_url(asset('assets/images/news.jpg')) }}" alt="news"/>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-							Phasellus
-						</p>
-						<div class="footnote">
-							<strong>By Efe Michael</strong>
-							<a href="#">Read</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="news">
-						<h4>Waffihub Releases innovative Fintech App</h4>
-						<img src="{{ absolute_url(asset('assets/images/news.jpg')) }}" alt="news"/>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-							Phasellus
-						</p>
-						<div class="footnote">
-							<strong>By Efe Michael</strong>
-							<a href="#">Read</a>
+					<div class="splide__progress">
+						<div class="splide__progress__bar">
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 	</section>
 	{{ include('content/inc/footer.html.twig') }}
 {% endblock %}
+{% block javascripts %}
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+	<script>
+		new Splide('.splide', {
+        type: 'slide',
+        perPage: 1,
+        autoplay: true,
+        rewind: true
+        }).mount();
+	</script>
+{% endblock %}
+

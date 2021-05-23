@@ -1,0 +1,183 @@
+{# templates/content/home.html.twig #}
+{% extends "base.html.twig" %}
+{% block title %}
+	{{title}}
+{% endblock %}
+{% block body %}
+   {{ include('content/inc/header.html.twig') }}
+	<section class="about-intro">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8">
+					<h2>About Delta Tech</h2>
+					<p>
+						Our mission is to provide an enabling environment for tech enthusiasts and 
+						startups in Delta state to build, grow, and scale
+					</p>
+					<h2>Our Vision</h2>
+					<p>
+						Our vision is to establish a robust, thriving tech ecosystem in Delta state 
+						that will creaat well-paying jobs for and help solve problems in the region
+					</p>
+				</div>
+				<div class="col-md-4">
+					<img class="img-fluid" src="{{ absolute_url(asset('assets/images/dtc.jpg')) }}" alt="dtc"/>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="about-commitments">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Our Commitments</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="commitment">
+						<img src="{{ absolute_url(asset('assets/images/advocate.png')) }}"/>
+						<p>
+							Advocate for technology research, development and adoption in Delta
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="commitment">
+						<img src="{{ absolute_url(asset('assets/images/promote.png')) }}"/>
+						<p>
+							Showcase/promote innovations and technologies that are #MadeInDelta
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="commitment">
+						<img src="{{ absolute_url(asset('assets/images/empower.png')) }}"/>
+						<p>
+							Empower people with skills and resources to attain financial freedom
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="commitment">
+						<img src="{{ absolute_url(asset('assets/images/collaborate.png')) }}"/>
+						<p>
+							Engender collaboration and healthy competition among local techies/startups
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="community-breakdown">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Community Breakdown</h2>
+					<p>
+						The players in Delta tech community come from different backgrounds and 
+						are at different levels in their professional career. Some are focusd 
+						on tech talent development and startup incubation/acceleration, why 
+						others are more concerned about innovating and building new 
+						technology-driven products that solves problems.
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="stats">
+						<strong>10,000+</strong>
+						<p>
+							Tech Enthusiasts (developers, designers, data scientist etc)
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="stats">
+						<strong>40+</strong>
+						<p>
+							Tech Startups
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="stats">
+						<strong>11</strong>
+						<p>
+							Innovation/Technology Hubs (in 5 cities across the state)
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="stats">
+						<strong>26</strong>
+						<p>
+							Tech/Startup Communities
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="members-benefits">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Members Benefits</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<img class="img-fluid  mx-auto d-block" src="{{ absolute_url(asset('assets/images/members.png')) }}"/>
+				</div>
+				<div class="col-md-6">
+					<h3>Free Digital Skills/Resources</h3>
+					<p>
+						Tutorials, articles, videos, and other educational materials to excel. Learn »
+					</p>
+					<h3>Access to well paying jobs</h3>
+					<p>
+						Lots of of companies looking for tech talents in Delta to hire post on our job-board on a daily
+					</p>
+					<h3>Free Product activation marketing</h3>
+					<p>
+						Launch your new tech product to the market faster with our 'Buy #MadeInDelta Campaign'
+					</p>
+					<h3>Equity free crowdfund</h3>
+					<p>
+						Get up to $5,000 equity-free crowd funding for your startup idea 
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="partner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Become a Delta Tech Community Partner</h2>
+					<p>
+						Every year, major companies and philanthropic foundations sponsor our 
+						programs. Most partners host interactive events and mentorship, offering 
+						local techies a truly immersive experience
+					</p>
+					<div class="logos">
+						<img src="{{ absolute_url(asset('assets/images/lesstress.png')) }}"/>
+						<img src="{{ absolute_url(asset('assets/images/skysenx.png')) }}"/>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<form>
+						<h4>Get in touch</h4>
+						<input placeholder="Your Name"/>
+						<input placeholder="Your Email"/>
+						<textarea placeholder="Your Message"></textarea>
+						<button>Send</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	{{ include('content/inc/footer.html.twig') }}
+{% endblock %}
+
